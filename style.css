@@ -37,12 +37,16 @@ body{
 
 
 .logo img{
-    width: 8em;
+    width: 50px;
     display: inline-block;
 }
 
 a.nav-link{
     color: white;
+}
+
+.nav-item{
+    font-size: .9em;
 }
 
 a.nav-link:hover,
@@ -91,7 +95,7 @@ a.nav-link.active {
 
 .banner{
     position: absolute;
-    bottom: 160px;
+    top: 450px;
     left: 0;
     width: 40%;
     height: 30%;

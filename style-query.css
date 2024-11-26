@@ -13,33 +13,83 @@
 }
 
 @media screen and (max-width: 1060px){
+    body > header{
+        position: static;
+    }
+
+    #menu{
+        width: 90%;
+        margin: auto;
+    }
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 30px;
+    }
+
+    #home-page{
+        position: static;
+        width: 100%;
+        min-height: auto;
+    }
+
+    #cover1{
+        display: none;
+    }
+
     #home-page h1{
-        margin-top: 120px;
+        font-size: 3.5em;
+        line-height: 0.9;
+    }
+    
+    #home-page h2{
+        font-size: 1em;
+    }
+
+    .mobile-side1{
+        width: 55%;
+        margin-top: 5%;
+
+    }
+
+    .mobile-side2{
+        width: 45%;
+    }
+
+    #cover2{
+        display: inline-block;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    #home-page div{
+        position: static;
     }
 
     .banner{
-        top: 530px;
-        bottom: 80px;
-        width: 80%;
+        display: none;
     }
 
-    .cards{
-        position: absolute;
-        top: 350px;
-        left: 20px;
+    .cards {
+        position: static; 
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap; 
+        margin-top: 10px;
     }
 
     .card{
-        width: 150px;
-        height: 140px;
+        width: 145px;
+        height: 160px;
     }
     
-    .card-title{
-        font-size: .9em;
-    }
+    
+    
+    
 }
 
-@media screen and (max-width: 860px){
+ @media screen and (max-width: 860px){
     ul.nav.nav-pills{
         width: 80%;
         font-size: .9em;

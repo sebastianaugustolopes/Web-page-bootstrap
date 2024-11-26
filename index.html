@@ -12,90 +12,104 @@
 
 </head>
 <body>
-  <header id="header">
+  <header>
     <div class="container-fluid">
-      <nav class="navbar" id="menu">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="#home-page" class="nav-link active">Home Page</a>
-          </li>
-          <li class="nav-item">
-            <a href="#profile" class="nav-link">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a href="#community" class="nav-link">Community</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Open Gallery
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Home page</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#help-center" class="nav-link">Help Center</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-md" id="menu">
         <div class="logo"><img src="images/logo_cropped.png" alt="Logo"></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div  class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a href="#home-page" class="nav-link active">Home Page</a>
+              </li>
+              <li class="nav-item">
+                <a href="#profile" class="nav-link">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a href="#community" class="nav-link">Community</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Open Gallery
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Home page</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#help-center" class="nav-link">Help Center</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="home-page">
-      <img src="images/cover.jpg" alt="Cover_img">
-      <div class="w-100 h-100 font-kousel">
-        <h1>Digital High-School </h1>
-        <h2>A platform for studies - community - information - and technology</h2>
+    <div class="mobile-side1">
+      <section id="home-page">
+        <img id="cover1" src="images/cover.jpg" alt="Cover_img">
+        <div class="font-kousel">
+          <h1 class="m-0">Digital High-School </h1>
+          <h2>A platform for studies - community - information - and technology</h2>
+        </div>
+      </section>
+      <div class="banner">
+        <aside class="font-kousel">
+            <img src="images/logo_cropped.png" alt="Logo_img">
+            <p>Pre-university course</p>
+        </aside>
+        <article class="banner-info">
+          <header class="font-kousel header">
+            <p>25 weeks</p>
+          </header>
+          <section>
+            <time datetime="2024-01-07"><strong>Start:</strong> 01/07/24</time><br>
+            <time datetime="2024-09-08"><strong>Finish:</strong> 09/08/24</time>
+          </section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quos nisi, exercitationem eligendi minima expedita ea corporis fuga.</p>
+          <button>Learn more</button>
+        </article>
       </div>
-    </section>
-    <div class="banner">
-      <aside class="font-kousel">
-          <img src="images/logo_cropped.png" alt="Logo_img">
-          <p>Pre-university course</p>
-      </aside>
-      <article class="banner-info">
-        <header class="font-kousel">
-          <p>25 weeks</p>
-        </header>
-        <section>
-          <time datetime="2024-01-07"><strong>Start:</strong> 01/07/24</time><br>
-          <time datetime="2024-09-08"><strong>Finish:</strong> 09/08/24</time>
-        </section>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quos nisi, exercitationem eligendi minima expedita ea corporis fuga.</p>
-        <button>Learn more</button>
-      </article>
+      <section class="cards">
+        <a href="#">
+          <div class="card">
+            <img src="images/Book_banner.png" alt="Library_logo">
+            <div class="card-body">
+              <h4 class="card-title font-kousel m-0">Book recommendation.</h4>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card">
+            <img src="images/Notion_banner.png" alt="card-image" class="Notion_logo">
+            <div class="card-body">
+              <h4 class="card-title font-kousel m-0">Personal notion template for students.</h4>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="card">
+            <img src="images/GitHub_banner.png" alt="card-image" class="GitHub_logo">
+            <div class="card-body">
+              <h4 class="card-title font-kousel m-0">How to Get Started with GitHub (as a new developer) ?
+              </h4>
+            </div>
+          </div>
+        </a>
+      </section>
     </div>
-    <section class="cards">
-      <a href="#">
-        <div class="card">
-          <img src="images/Book_banner.png" alt="Library_logo">
-          <div class="card-body">
-            <h4 class="card-title font-kousel m-0">Book recommendation.</h4>
-          </div>
-        </div>
-      </a>
-      <a href="#">
-        <div class="card">
-          <img src="images/Notion_banner.png" alt="card-image" class="Notion_logo">
-          <div class="card-body">
-            <h4 class="card-title font-kousel m-0">Personal notion template for students.</h4>
-          </div>
-        </div>
-      </a>
-      <a href="#">
-        <div class="card">
-          <img src="images/GitHub_banner.png" alt="card-image" class="GitHub_logo">
-          <div class="card-body">
-            <h4 class="card-title font-kousel m-0">How to Get Started with GitHub (as a new developer) ?
-            </h4>
-          </div>
-        </div>
-      </a>
-    </section>
+    <div class="mobile-side2"><img id="cover2" src="images/cover_2.jpg" alt="Mobile_cover"></div>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
